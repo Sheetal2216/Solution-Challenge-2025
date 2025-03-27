@@ -1,122 +1,139 @@
 /* General Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-  }
-  
-  body {
-    background: linear-gradient(135deg, #1E293B, #3B82F6);
-    color: #fff;
-   
-  }
-  
-  header {
-    display: flex;
-   background-color: rgba(0, 0, 0, 0.7);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #1E293B, #3B82F6);
+  color: #fff;
+}
+
+header {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.7);
   align-items: center;
   height: 5rem;
   justify-content: right;
   top: 0;
   width: 100%;
-  z-index: 1000; /* Ensure it stays on top */
-  }
-  
-   nav{
-    margin-right: 3em ;
-   }
-  
-  nav ul {
-    list-style-type: none;
-    padding-top: 10px;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin: 0 15px;
-  }
-  
-  nav a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: 200;
-    transition: color 0.3s;
-  }
-  
-  nav a:hover {
-    color: #48ff00;
-  }
-  
-  /* Section Styling */
-  section {
-    padding: 60px 20px;
-    margin: 20px;
-    background-color: rgba(0, 0, 0, 0.7);
-    border-radius: 12px;
-    animation: fadeIn 1s ease-in;
-  }
+  z-index: 1000;
+}
 
- section#home
-  {
-    
-    background-image: url(https://as2.ftcdn.net/v2/jpg/12/60/91/41/1000_F_1260914182_9zwVmdG5bYOopfVvO7tML0eTfz8XtT5b.jpg);
-    background-position: center;
-    background-size: cover;
-    height: 40rem;
+nav {
+  margin-right: 3em;
+}
+
+nav ul {
+  list-style-type: none;
+  padding-top: 10px;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 200;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #48ff00;
+}
+
+/* Section Styling */
+section {
+  padding: 60px 20px;
+  margin: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 12px;
+  animation: fadeIn 1.5s ease-in;
+}
+
+section#home {
+  background-image: url('WhatsApp Image 2025-03-27 at 13.27.46_3c920e7f.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 40rem;
+  background-color: rgba(0, 0, 0, 0.5); /* Blackish overlay */
+  background-blend-mode: multiply; /* Blend the color with the image */
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Button Styling */
+button {
+  background-color: #3B82F6;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+  background-color: #1E293B;
+  transform: scale(1.05);
+}
+
+/* Input Styling */
+input[type='file'] {
+  margin-top: 20px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
   }
-  
-  h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-  }
-  
-  /* Button Styling */
-  button {
-    background-color: #3B82F6;
-    color: white;
-    border: none;
-    padding: 12px 24px;
-    font-size: 1.2rem;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s;
-  }
-  
-  button:hover {
-    background-color: #1E293B;
-    transform: scale(1.05);
-  }
-  
-  /* Input Styling */
-  input[type='file'] {
-    margin-top: 20px;
-  }
-  
-  /* Animation */
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(-20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  /* Footer */
-  footer {
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    text-align: center;
-    font-size: 0.9rem;
-    color: #ccc;
-  }
-  <link rel="stylesheet" href="ghack.css">  
+}
+
+/* Slide Animation on Scroll */
+section {
+  transition: transform 1.5s ease-in-out, opacity 1.5s ease-in-out;
+}
+
+section:nth-child(odd) {
+  transform: translateX(-100vw);
+}
+
+section:nth-child(even) {
+  transform: translateX(100vw);
+}
+
+section.visible {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+/* Footer */
+footer {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
