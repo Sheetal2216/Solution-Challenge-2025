@@ -45,7 +45,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #48ff00;
+  color: #64b9da;
 }
 
 /* Section Styling */
@@ -136,7 +136,7 @@ footer {
   font-size: 0.9rem;
   color: #ccc;
 }
-<<<<<<< HEAD
+
 
 .analyze-image {
   display: block;
@@ -182,12 +182,11 @@ footer {
     font-size: 1rem;
   }
   
-}
+
 
 .analyze-image {
   width: 100%;
   max-width: 800px;
   border-radius: 12px;
 }
-=======
->>>>>>> faa82ea541d19e24e86e1fa0eb3a44c8fba0e73a
+
