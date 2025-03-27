@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="ghack.css">  
+  <title>E-Waste Management</title>
+</head>
+<body>
+  <header>
+    <!-- <h1>Welcome to E-Waste Management</h1> -->
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#analyze">Analyze E-Waste</a></li>
+        <li><a href="#stats">Current Stats</a></li>
+        <li><a href="#pickup">E-Waste Pickup</a></li>
+        <li><a href="#locations">Recycling Centers</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h2>Join Us in Managing E-Waste</h2>
+    <p>Learn how to recycle and contribute towards a cleaner environment. Our platform provides detailed insights into how precious metals like gold and silver are extracted from e-waste.</p>
+    <img src="https://source.unsplash.com/600x400/?recycle" alt="E-Waste Recycling" />
+  </section>
+
+  <section id="analyze">
+    <h2>AI E-Waste Analyzer</h2>
+    <input type="file" accept="image/*" id="imageInput" />
+    <button onclick="analyzeImage()">Analyze Image</button>
+    <p id="analysisResult">Upload an image to check for e-waste.</p>
+    <img src="https://source.unsplash.com/600x400/?technology,waste" alt="E-Waste Analyzer" />
+  </section>
+
+  <section id="stats">
+    <h2>Current Stats</h2>
+    <p>Gold Extracted: <span id="goldStat">Loading...</span> grams</p>
+    <p>Silver Extracted: <span id="silverStat">Loading...</span> grams</p>
+    <canvas id="goldSilverChart" width="400" height="400"></canvas>
+    <img src="https://source.unsplash.com/600x400/?gold,silver" alt="Gold and Silver Extraction" />
+  </section>
+
+  <section id="data">
+    <h2>Total E-Waste Data</h2>
+    <p>Total E-Waste Processed: <span id="wasteData">Loading...</span> tons</p>
+    <canvas id="wasteDataChart" width="400" height="400"></canvas>
+    <img src="https://source.unsplash.com/600x400/?ewaste,environment" alt="E-Waste Data" />
+  </section>
+
+  <section id="recycling">
+    <h2>Recycling Process</h2>
+    <p>The e-waste recycling process involves the following steps:</p>
+    <ol>
+      <li>Collection and Transportation: E-waste is collected and sent to recycling centers.</li>
+      <li>Sorting and Dismantling: Devices are manually sorted and dismantled.</li>
+      <li>Shredding and Separation: Components are shredded and metals are separated using advanced technologies.</li>
+      <li>Metal Extraction: Precious metals like gold, silver, and copper are extracted using hydrometallurgical and pyrometallurgical processes.</li>
+    </ol>
+    <img src="https://source.unsplash.com/600x400/?recycling,factory" alt="Recycling Process" />
+  </section>
+
+  <section id="pickup">
+    <h2>Request E-Waste Pickup</h2>
+    <p>Fill in your details to request a free e-waste pickup from your location.</p>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="address">Address:</label>
+      <input type="text" id="address" name="address" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <button type="submit">Request Pickup</button>
+    </form>
+  </section>
+
+  <section id="locations">
+    <h2>Find Nearest Recycling Centers</h2>
+    <button onclick="findLocation()">Locate Nearest Center</button>
+    <p id="locationResult">Your nearest recycling center will be displayed here.</p>
+  </section>
+
+  <section id="usage">
+    <h2>How We Use Collected E-Waste</h2>
+    <p>We ensure responsible recycling by extracting valuable metals and safely disposing of hazardous materials. Components that can be reused are refurbished and used to manufacture new products, reducing electronic waste.</p>
+    <img src="https://source.unsplash.com/600x400/?recycle,innovation" alt="Waste Usage" />
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: support@ewastemanagement.com</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 E-Waste Management. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
