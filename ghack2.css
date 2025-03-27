@@ -1,0 +1,36 @@
+/*bringing contentb of stats to center*/
+#stats {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  #stats h2 {
+    margin-bottom: 20px;
+  }
+  
+  #stats p {
+    margin-bottom: 10px;
+  }
+  
+  #goldSilverChart {
+    display: block;
+    margin: 20px auto; /* Centers the canvas horizontally */
+  }
+
+  /*recycling processes css*/
+  .recycling-step {
+    display: inline-block;
+    width: 22%;
+    margin: 1%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+  }
+  
+  .recycling-step:hover {
+    transform: translateY(-10px);
+  }
+  

@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="ghack2.css" />
   <script src="script.js" defer></script>
   <link rel="stylesheet" href="ghack.css">  
-  <title>E-Waste Management</title>
+  <title>ReUse</title>
 </head>
 <body>
   <header>
-    <img src="logo_ReNew-removebg-preview.png" alt="E-Waste Analyzer" height="160%" width="auto" /> 
+    <img src="logo_ReNew-removebg-preview.png" alt="E-Waste Analyzer" height="160%" width="auto"/> 
     <nav>
       <ul>
         <li><a href="#home">Home</a></li>
@@ -34,7 +34,7 @@
     <div class="analyze-container">
       <div class="upload-area">
         <input type="file" accept="image/*" id="imageInput" />
-        <button onclick="analyzeImage()">Analyze Image</button>
+        <button onclick="analyzeImage()" >Analyze Image</button>
         <p id="analysisResult">Upload an image to check for e-waste using our AI model.</p>
       </div>
       <div class="info-area">
@@ -46,7 +46,7 @@
         </ul>
       </div>
     </div>
-    <img src="green t .jpg" alt="E-Waste Analyzer" class="analyze-image"  />
+    <img src="green t .jpg" alt="E-Waste Analyzer" class="analyze-image" >
   </section>
 
   <!-- Current Stats Section -->
@@ -57,28 +57,37 @@
     <canvas id="goldSilverChart" width="400" height="400"></canvas>
   </section>
 
-  <!-- Recycling Process Section with Cards -->
-  <section id="recycling">
-    <h2>Recycling Process</h2>
-    <div class="recycling-cards">
-      <div class="card">
-        <h3>Collection & Transportation</h3>
-        <p>E-waste is collected from users and transported to recycling centers.</p>
-      </div>
-      <div class="card">
-        <h3>Sorting & Dismantling</h3>
-        <p>Devices are manually dismantled, separating hazardous and recyclable materials.</p>
-      </div>
-      <div class="card">
-        <h3>Shredding & Separation</h3>
-        <p>Components are shredded, and metals are separated using advanced technology.</p>
-      </div>
-      <div class="card">
-        <h3>Metal Extraction</h3>
-        <p>Precious metals like gold, silver, and copper are extracted using efficient processes.</p>
-      </div>
-    </div>
+ <!-- Recycling Process Section with Separate Sections -->
+<section id="recycling">
+  <h2 style="text-align: center;">Recycling Process</h2>
+
+  <section class="recycling-step">
+    <h3>Collection & Transportation</h3>
+    <p>E-waste is collected from users and transported to recycling centers.</p>
+    <img src="keyboards.jpg" alt="collection of e-waste" height="180px" width="auto"/> 
   </section>
+
+  <section class="recycling-step">
+    <h3>Sorting & Dismantling</h3>
+    <p>Devices are manually dismantled, separating hazardous and recyclable materials.</p>
+    <img src="sorted e waste.jpg" alt="sorted e-waste" height="150px" width="auto"/> 
+
+  </section>
+
+  <section class="recycling-step">
+    <h3>Shredding & Separation</h3>
+    <p>Components are shredded, and metals are separated using advanced technology.</p>
+    <img src="shredding.jpg" alt="shredding of e-waste" height="160px" width="auto"/> 
+    
+  </section>
+
+  <section class="recycling-step">
+    <h3>Metal Extraction</h3>
+    <p>Precious metals like gold, silver, and copper are extracted using efficient processes.</p>
+    <img src="gold silver.jpg" alt="extraction" height="150px" width="auto"/> 
+  </section>
+</section>
+
 
   <!-- Request Pickup Section -->
   <section id="pickup">

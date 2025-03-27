@@ -137,3 +137,54 @@ footer {
   color: #ccc;
 }
 
+.analyze-image {
+  display: block;
+  margin: 40px auto; /* Centers the image horizontally and adds padding */
+  padding: 20px; /* Adds padding inside the image container */
+  max-width: 80%; /* Ensures the image is responsive */
+  height: auto; /* Maintains aspect ratio */
+}
+
+
+
+#analyze {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.analyze-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 10px;
+}
+
+.upload-area,
+.info-area {
+  background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 12px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between input, button, and result */
+  }
+  
+  input[type="file"],
+  button,
+  #analysisResult {
+    padding: 10px;
+    font-size: 1rem;
+  }
+  
+}
+
+.analyze-image {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 12px;
+}
